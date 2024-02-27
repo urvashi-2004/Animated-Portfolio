@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.css">
+    <title>my profile</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body onload="loader()">
+    <div id="Loading"></div>
+     <!-----start Hearder section-----> 
+     <div id="hearder"  data-aos="fade-up"
+     data-aos-anchor-placement="top-bottom"> 
+        <div class="contenier">
+            <nav >
+                <img src="images/logo.png" alt="logo" class="logo" data-aos="zoom-in">
+                <ul id="sidmenu" data-aos="zoom-in">
+                    <li><a href="#hearder" >Home</a></li>
+                    <li><a href="#about" >About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio" >Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                 </ul>
+                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+              </nav> 
+              <div class="hearder-text"  data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <p>Front-end developer</p>
+                <h1>Hii, I am <span>Urvashi Saratkar</span> <br> From India</h1>
+              </div>       
+            </div>
+        </div>
+     </div>
+      <!-----End Hearder section----->
+
+
+      <!-----start About section----->
+      <div id="about"data-aos="fade-up"
+      data-aos-anchor-placement="center-bottom">
+        <div class="contenier">
+            <div class="row">
+                <div class="about-col-1">
+                  <img src="images/IMG_8733.JPG" data-aos="zoom-in" >  
+                </div>
+                <div class="about-col-2" data-aos="zoom-in">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello there! 👋 I'm Urvashi Saratkar, a passionate B.Tech student majoring in Information Technology at Rustamji Institute of Technology in Tekanpur. I thrive on challenges and have a keen interest in competitive programming and frontend development.
+                        As a curious individual, I find joy in exploring new things and technologies. Whether it's delving into the latest programming languages or experimenting with innovative design trends, I am always eager to expand my knowledge and skills.
+                        Currently, I am channeling my enthusiasm into personal projects that not only showcase my creativity but also serve as a platform for honing my skills. </p>
+                   <div class="tab-titles" data-aos="fade-left">
+                    <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('codingprofile')">Coding Profiles</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills" data-aos="zoom-in">
+                    <ul>
+                        <li><span>Web Development</span><br> Web development</li>
+                        <li><span>C++</span><br>Competitive programming</li>
+                        <li><span>DSA</span><br>Data Sttructure and Algorithm</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="experience" >
+                    <ul>
+                        <li><span>January 2022 - Present</span><br>Solved 500+ questions on different coding platforms.</li>
+                        <li><span>September 2023 - October 2023</span><br>Front-end Developer Intern at Codesoft.</li>
+                        <li><span>January 2024 - Present</span><br>Intern at CloudEQS.</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Engineering from Information Technology</span><br>Rustamji Institute of Technology (Tekanpur).</li>
+                        <li><span>Math's Student</span><br>Govt. Model Higher Secondary School (Gwalior).</li>
+                        <li><span>Science Student</span><br>Gyan Bharti Vidya Mandir School (Gwalior).</li>
+                    </ul>
+                   </div>
+                   <div class="tab-contents" id="codingprofile">
+                    <ul>
+                        <li><span><a target="_blank" href="https://leetcode.com/urvashi_2004/">LeetCode</a></span><br>Achieved a 50 Days Badge 2023.</li>
+                        <li><span><a target="_blank" href="https://auth.geeksforgeeks.org/user/urvashisaratkar2004">GeeksForGeeks</a></span><br>Solved 500+ questions.</li>
+                        <li><span><a target="_blank" href="https://www.codingninjas.com/studio/profile/urvashi_2004">CodeStudio</a></span><br>Specialist in Oops in C++.</li>
+                        <!-- <li><span><a target="_blank" href="https://www.hackerrank.com/profile/urvashisaratkar1">HackerRank</a></span><br>Achieved 4 start in Cpp.</li> -->
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-----End About section----->
+
+
+
+
+      <!-----Service section Start----->
+     <div id="services" data-aos="fade-up"
+     data-aos-anchor-placement="top-center">
+        <div class="contenier" >
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div data-aos="fade-right">
+                    <i class="fas fa-paint-brush"></i>
+                    <h2>Web Development</h2>
+                    <p>I am a passionate Frontend Developer with love for Javascript and Reactjs and want to pave my path for Fullstack Development. </p>
+
+                </div>
+                <div data-aos="flip-up">
+                    <i class="fas fa-code"></i>
+                    <h2>C++</h2>
+                    <p>I am also a wordpress designer. I have made a project using wordpress. I am currently working on my personal projects to upskill myself.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <i class="fas fa-chart-line"></i>
+                    <h2>Data Structure</h2>
+                    <p>I am a C++ programmer.  I believe in learning by doing. I got 13357 rank in kickstart 2021. I have got 4 star in Hackerarnk in c++.</p>
+                </div>
+
+            </div>
+
+        </div>
+     </div>
+      <!----services section end ----->
+
+
+
+        <!----portfolio section Start ----->
+
+        <div id="portfolio">
+            <div class="contenier">
+                <h1 class="sub-title">My Repositories</h1>
+                <p>Some cool projects built using frontend technologies.</p>
+                
+                <div class="work-list" >
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/calci.png" >
+                        <div class="layer">
+                            <h3>Calculator</h3>
+                            <p>An Awesome Calculator build using HTML, CSS & JavaScript with light and dark mode feature.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Calculator"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/armstrong.png" >
+                        <div class="layer">
+                            <h3>Armstrong Number Checker</h3>
+                            <p>A web application to check whether a given number is an Armstrong number, built with HTML, CSS, and JavaScript.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Armstrong-Checker"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/image-filter.png" >
+                        <div class="layer">
+                            <h3>Image Fileration App</h3>
+                            <p>An interactive web application that allows users to apply various filters to images in real-time. Built with HTML, CSS, and JavaScript.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Image-Filteration-App"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/digital-clock.png" >
+                        <div class="layer">
+                            <h3>Digital Clock</h3>
+                            <p>A modern and stylish digital clock web application that return the time and some informations about the current day. Crafted with HTML, CSS, and JavaScript.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Javascript-digital-clock"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/profile-card.png" >
+                        <div class="layer">
+                            <h3>Animated Profile Card</h3>
+                            <p>A stylish, animated and customizable profile card created with HTML and CSS. Showcase your name, title, and a brief bio with style.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Animated-Profile-Card"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+        
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/tempersture.png" >
+                        <div class="layer">
+                            <h3>Temperature Converter</h3>
+                            <p>An interactive web application for converting temperatures between Celsius, Fahrenheit, and Kelvin. Built with HTML, CSS, and JavaScript.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Temperature-Converter"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/analog-clock.png" >
+                        <div class="layer">
+                            <h3>Analog Clock</h3>
+                            <p>A stylish and functional analog clock web application created using HTML, CSS, and JavaScript. Immerse yourself in the timeless elegance of the analog clock.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Analog-Clock"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+        
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/amazon.png" >
+                        <div class="layer">
+                            <h3>Amazon Clone</h3>
+                            <p>A simplified and responsive clone of the Amazon website, built with HTML, CSS. Explore the simplified Amazon clone.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Amazon-Clone"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/stopwatch.png" >
+                        <div class="layer">
+                            <h3>Javascript-stopwatch</h3>
+                            <p>A simple and functional stopwatch web application built with HTML, CSS, and JavaScript. Start, stop, and reset the stopwatch to measure time intervals.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Javascript-stopwatch"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/counter-app.png" >
+                        <div class="layer">
+                            <h3>React Counter App</h3>
+                            <p>The React Counter App provides a basic example of how to create a dynamic and interactive counter that allows users to increment and decrement a numeric value with the click of a button.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/React-counter-app"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/billing.png" >
+                        <div class="layer">
+                            <h3>Billing System</h3>
+                            <p>It is an advance billing system designed to streamline the invoicing and payment processes. Empower your billing process, Built using Reactjs.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Billing-system"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="work" data-aos="zoom-in">
+                        <img src="images/carthub.png" >
+                        <div class="layer">
+                            <h3>React Cart Hub</h3>
+                            <p>This is the shop application that is based on react. Here user can see the various products and can add it to the cart.</p>
+                            <a target="_blank"  href="https://github.com/urvashi-2004/Shop-app-redux"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                        
+                    </div>
+
+
+
+
+                </div>
+                  
+                <a target="_blank" href="https://github.com/urvashi-2004?tab=repositories" class="btn">Check More</a>
+
+            </div>
+        </div>
+         <!----portfolio section End ----->
+
+
+          <!----Contact section Start ----->
+          <div id="contact"  >
+            <div class="contenier">
+                <div class="row">
+                    <div class="contact-left"  data-aos="fade-up-right">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>urvashisaratkar@gmail.com</p>
+                        <p><i class="fa-solid fa-square-phone-flip"></i>9301681699</p>
+                        <div class="social-icons" data-aos="zoom-in">
+            
+                            <a target="_blank" class="instagram" href="https://www.instagram.com/urvashisaratkar10/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a target="_blank" class="github" href="https://github.com/urvashi-2004?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="linkedin" href="https://www.linkedin.com/in/urvashi-saratkar-965153200/"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a target="_blank" href="./URVASHI SARATKAR.pdf" class="btn btn2">View Resume</a>
+
+                    </div>
+                    <div class="contact-right" data-aos="fade-up-left">
+                        <form >
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="Email" name="Email" placeholder="Your Email" required>
+                            <textarea name="massage" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 Website Designed By <span style="color: rgb(224, 44, 44);">Urvashi Saratkar</span></p>
+            </div>
+          </div>
+   
+          <!----Contact section End ----->
+          <script>
+            var preloader = document.getElementById("Loading");
+            function loader(){
+              preloader.style.display = 'none';
+            }
+          </script>
+  
+      <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+      </script>
+      
+    <!-- aos data  -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration: 900,
+        });
+      </script>
+    <script>
+        var sidmenu = document.getElementById("sidmenu");
+        function openmenu(){
+            sidmenu.style.right ="0";
+        }
+        function closemenu(){
+            sidmenu.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
